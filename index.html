@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Chat</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
@@ -23,118 +24,39 @@
 </div>
 
 <div class="container">
-    <div class="page-content page-container" id="page-content">
-        <div class="padding">
-            <div class="row container d-flex justify-content-center">
-                <div class="col-md-6">
-                    <div class="card card-bordered">
-                        <div class="card-header">
-                            <h4 class="card-title"><strong>Chat</strong></h4> <a class="btn btn-xs btn-secondary"
-                                                                                 href="#" data-abc="true">Let's Chat
-                            App</a>
-                        </div>
-                        <div class="ps-container ps-theme-default ps-active-y" id="chat-content"
-                             style="overflow-y: scroll !important; height:400px !important;">
-                            <div class="media media-chat"><img class="avatar"
-                                                               src="https://img.icons8.com/color/36/000000/administrator-male.png"
-                                                               alt="...">
-                                <div class="media-body">
-                                    <p>Hi</p>
-                                    <p>How are you ...???</p>
-                                    <p>What are you doing tomorrow?<br> Can we come up a bar?</p>
-                                    <p class="meta">
-                                        <time datetime="2018">23:58</time>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="media media-meta-day">Today</div>
-                            <div class="media media-chat media-chat-reverse">
-                                <div class="media-body">
-                                    <p>Hiii, I'm good.</p>
-                                    <p>How are you doing?</p>
-                                    <p>Long time no see! Tomorrow office. will be free on sunday.</p>
-                                    <p class="meta">
-                                        <time datetime="2018">00:06</time>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="media media-chat"><img class="avatar"
-                                                               src="https://img.icons8.com/color/36/000000/administrator-male.png"
-                                                               alt="...">
-                                <div class="media-body">
-                                    <p>Okay</p>
-                                    <p>We will go on sunday? </p>
-                                    <p class="meta">
-                                        <time datetime="2018">00:07</time>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="media media-chat media-chat-reverse">
-                                <div class="media-body">
-                                    <p>That's awesome!</p>
-                                    <p>I will meet you Sandon Square sharp at 10 AM</p>
-                                    <p>Is that okay?</p>
-                                    <p class="meta">
-                                        <time datetime="2018">00:09</time>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="media media-chat"><img class="avatar"
-                                                               src="https://img.icons8.com/color/36/000000/administrator-male.png"
-                                                               alt="...">
-                                <div class="media-body">
-                                    <p>Okay i will meet you on Sandon Square </p>
-                                    <p class="meta">
-                                        <time datetime="2018">00:10</time>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="media media-chat media-chat-reverse">
-                                <div class="media-body">
-                                    <p>Do you have pictures of Matley Marriage?</p>
-                                    <p class="meta">
-                                        <time datetime="2018">00:10</time>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="media media-chat"><img class="avatar"
-                                                               src="https://img.icons8.com/color/36/000000/administrator-male.png"
-                                                               alt="...">
-                                <div class="media-body">
-                                    <p>Sorry I don't have. i changed my phone.</p>
-                                    <p class="meta">
-                                        <time datetime="2018">00:12</time>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="media media-chat media-chat-reverse">
-                                <div class="media-body">
-                                    <p>Okay then see you on sunday!!</p>
-                                    <p class="meta">
-                                        <time datetime="2018">00:12</time>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
-                                <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-                            </div>
-                            <div class="ps-scrollbar-y-rail" style="top: 0px; height: 0px; right: 2px;">
-                                <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 2px;"></div>
-                            </div>
-                        </div>
-                        <div class="publisher bt-1 border-light"><img class="avatar avatar-xs"
-                                                                      src="https://img.icons8.com/color/36/000000/administrator-male.png"
-                                                                      alt="..."> <input class="publisher-input"
-                                                                                        type="text"
-                                                                                        placeholder="Write something">
-                            <span class="publisher-btn file-group"> <i class="fa fa-paperclip file-browser"></i> <input
-                                    type="file"> </span> <a class="publisher-btn" href="#" data-abc="true"><i
-                                    class="fa fa-smile"></i></a> <a class="publisher-btn text-info" href="#"
-                                                                    data-abc="true"><i
-                                    class="fa fa-paper-plane"></i></a></div>
-                    </div>
-                </div>
+    <div class="row mt-2">
+        <div class="col-4">
+            <ul class="list-group list-users">
+                <li class="list-group-item active">User 1</li>
+                <li class="list-group-item">User 2</li>
+                <li class="list-group-item">User 3</li>
+                <li class="list-group-item">User 4</li>
+                <li class="list-group-item">User 5</li>
+                <li class="list-group-item">User 2</li>
+                <li class="list-group-item">User 3</li>
+                <li class="list-group-item">User 4</li>
+                <li class="list-group-item">User 5</li>
+                <li class="list-group-item">User 2</li>
+                <li class="list-group-item">User 3</li>
+                <li class="list-group-item">User 4</li>
+                <li class="list-group-item">User 5</li>
+            </ul>
+        </div>
+        <div class="col-8">
+            <div class="jumbotron">
+                <h1 class="display-4">Hello, world!</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
             </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Your message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ></textarea>
+
+            </div>
+            <button type="button" class=" btn btn-primary float-right" onclick="sendMessage()">Send</button>
         </div>
     </div>
 </div>
@@ -143,5 +65,16 @@
 <script src="/socket.io/socket.io.js"></script>
 <script>
     const socket = io.connect();
+    const message = document.getElementById("exampleFormControlTextarea1");
+
+    function sendMessage() {
+        socket.emit("sendMessage", message.value);
+        message.value = "";
+    }
+
+    socket.on('newMessage', message => {
+        console.log("new message >>> ", message)
+    })
+
 </script>
 </html>
