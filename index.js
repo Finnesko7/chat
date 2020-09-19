@@ -2,8 +2,11 @@ const express = require('express');
 const app = express();
 const server = require('http').createServer(app);
 const io = require('socket.io').listen(server);
+const port = 3000;
 
-server.listen(3000);
+server.listen(port, () => {
+    console.log(`Server is start of port: ${port}`)
+});
 
 app.use(express.static(__dirname + '/public'));
 

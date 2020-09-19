@@ -1,0 +1,13 @@
+.list-users {
+  height: 577px ;
+  overflow-y: scroll;
+
+  li {
+    cursor: pointer;
+  }
+}
+
+.jumbotron {
+  max-height: 400px;
+  overflow: auto;
+}
